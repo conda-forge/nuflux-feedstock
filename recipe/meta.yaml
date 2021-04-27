@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   skip: true  # [win]
-  script: BOOST_ROOT=$PREFIX CMAKE=$BUILD_PREFIX/bin/cmake PKG_CONFIG=$BUILD_PREFIX/bin/pkg-config PKG_CONFIG_PATH=$BUILD_PREFIX/lib/pkgconfig:$PKG_CONFIG_PATH meson setup ${MESON_ARGS:---buildtype release --prefix=$PREFIX -Dlibdir=lib} build && ninja -C build install
+  script: BOOST_ROOT=$PREFIX CMAKE=$BUILD_PREFIX/bin/cmake PKG_CONFIG=$BUILD_PREFIX/bin/pkg-config meson setup ${MESON_ARGS:---buildtype release --prefix=$PREFIX -Dlibdir=lib} build && ninja -C build install
 
 requirements:
   build:
