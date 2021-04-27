@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: nuflux
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/icecube/nuflux/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: a467a63ff886db2398c688dd6b36dba2c3ca09fbb78a64a859a192b1d1036360
+  sha256: 3c9d319a1c24c7327c5e30856d9b66e97c829f6dc07c86f9ff5178e6f4505208
 
 build:
   number: 0
