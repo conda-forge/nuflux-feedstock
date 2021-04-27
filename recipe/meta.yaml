@@ -9,7 +9,7 @@ source:
   sha256: a467a63ff886db2398c688dd6b36dba2c3ca09fbb78a64a859a192b1d1036360
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: BOOST_ROOT=$PREFIX meson setup ${MESON_ARGS:---buildtype release --prefix=$PREFIX -Dlibdir=lib} -Dpython=$PYTHON build && ninja -C build install
 
