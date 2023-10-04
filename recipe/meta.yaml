@@ -39,6 +39,9 @@ requirements:
 test:
   source_files:
     - tests
+  requires:
+    - pytest
+    - pytest-subtests
   commands:
     - cd tests && $PYTHON test_fluxes.py
 
