@@ -1,11 +1,11 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '11.0'
+- '10.9'
 boost:
 - 1.78.0
 c_compiler:
 - clang
 c_compiler_version:
-- '14'
+- '15'
 cfitsio:
 - 4.2.0
 channel_sources:
@@ -15,11 +15,11 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '14'
+- '15'
 macos_machine:
-- arm64-apple-darwin20.0.0
+- x86_64-apple-darwin13.4.0
 numpy:
-- '1.20'
+- '1.22'
 pin_run_as_build:
   boost:
     max_pin: x.x.x
@@ -28,10 +28,13 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.8.* *_cpython
+python_impl:
+- cpython
 target_platform:
-- osx-arm64
+- osx-64
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
 - - python
   - numpy
+  - python_impl

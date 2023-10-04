@@ -1,4 +1,4 @@
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 
 package:
   name: nuflux
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/icecube/nuflux/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b7a3c88107c73b81bf021acd5e6e69f9646811cc041b1dc14fffbdffcd736981
+  sha256: e7c95901ffc2d1a5c8cbe3f0a24c0277156762d131ef0facaad28b2b931bcfa7
 
 build:
-  number: 6
-  skip: true  # [win]
+  number: 0
+  skip: true  # [win or python_impl == "pypy"]
 
 requirements:
   build:
@@ -39,6 +39,9 @@ requirements:
 test:
   source_files:
     - tests
+  requires:
+    - pytest
+    - pytest-subtests
   commands:
     - cd tests && $PYTHON test_fluxes.py
 
