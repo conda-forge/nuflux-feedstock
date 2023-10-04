@@ -9,7 +9,7 @@ source:
   sha256: b7a3c88107c73b81bf021acd5e6e69f9646811cc041b1dc14fffbdffcd736981
 
 build:
-  number: 6
+  number: 7
   skip: true  # [win]
 
 requirements:
@@ -28,13 +28,13 @@ requirements:
     - numpy >=1.7
     - cfitsio
     - photospline
-    - boost
+    - libboost-python-devel
   run:
     - python
     - numpy
     - cfitsio
     - photospline
-    - boost
+    - libboost-python-devel
 
 test:
   source_files:
