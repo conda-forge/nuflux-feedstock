@@ -28,13 +28,13 @@ requirements:
     - numpy >=1.7
     - cfitsio
     - photospline
-    - boost
+    - libboost-python-devel
   run:
     - python
     - numpy
     - cfitsio
     - photospline
-    - boost
+    - libboost-python-devel
 
 test:
   source_files:
