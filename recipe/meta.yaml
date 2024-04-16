@@ -9,7 +9,7 @@ source:
   sha256: 65cb0c284cc46e1006f1eb1fba296b84e30a148d4386887de152961ba711d6b8
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win or python_impl == "pypy"]
 
 requirements:
@@ -22,12 +22,13 @@ requirements:
     - ninja
     - pkg-config
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
     - numpy >=1.7
     - cfitsio
-    - photospline
+    - photospline !=2.3.0
     - libboost-python-devel
   run:
     - python
