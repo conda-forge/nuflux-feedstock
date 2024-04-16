@@ -28,7 +28,7 @@ requirements:
     - python
     - numpy >=1.7
     - cfitsio
-    - photospline
+    - photospline !=2.3.0
     - libboost-python-devel
   run:
     - python
