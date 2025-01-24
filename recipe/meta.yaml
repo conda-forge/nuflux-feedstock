@@ -10,7 +10,7 @@ source:
 
 build:
   number: 4
-  skip: true  # [win or python_impl == "pypy"]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -26,13 +26,12 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
-    - numpy >=1.7
+    - numpy
     - cfitsio
     - photospline !=2.3.0
     - libboost-python-devel
   run:
     - python
-    - numpy
     - cfitsio
     - photospline
     - libboost-python-devel
